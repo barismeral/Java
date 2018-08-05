@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Created by baris Meral 2018.07.07 -->
+
+<project>
+
+<target name = "compile">
+<mkdir dir= "build/classes"/>
+<javac srcdir = "src" destdir = "build/classes"/> 
+</target>
+ 
+<target name = "jar">
+<mkdir dir = "build/jar" />
+<jar destfile = "build/jar/SplashFrame.jar" basedir = "build/classes" >
+<fileset dir="res" />
+<fileset dir="." includes="res/Java.png"/> 
+
+<manifest>
+
+<attribute name = "Manifest-Version" value = "1.0" />
+<attribute name = "Created-By" value = "BarisMeral"/>
+<attribute name = "Main-Class" value = "com.barismeral.screen.splashscreen.Main" />
+
+</manifest>
+
+</jar>
+</target>
+
+<target name="run">
+
+<java jar="build/jar/SplashFrame.jar" fork= "true" />
+
+</target>
+
+<target name="clean">
+<delete dir="build"/>
+
+</target>
+
+
+</project>
