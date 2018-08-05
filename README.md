@@ -1,8 +1,10 @@
 # Java
 Java Language Examples
 
+<hr>
+<hr>
 
-# JAVA PROJECTS
+# Java ProjectsS
 <hr>
 <hr>
 
@@ -20,4 +22,8 @@ Java Language Examples
 <hr>
 
 ![](https://github.com/barismeral/Java/blob/master/readme-images/jnotepad_img_4.JPG?raw=true)
+
+<hr>
+<hr>
+<hr>
 
